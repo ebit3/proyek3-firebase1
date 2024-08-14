@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Management</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+
+            .container {
+                max-width: 600px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .form-group {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            label {
+                display: inline-block;
+                font-size: 16px;
+                width: 120px;
+                padding-right: 10px;
+            }
+
+            input,
+            select {
+                width: 180px;
+                height: 30px;
+                padding: 5px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                height: 40px;
+                width: 140px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 5px 0;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            .button-group {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <label for="Fnameinp">First Name</label>
+        <input type="text" name="" id="Fnameinp">
+        <br><br>
+
+        <label for="Lnameinp">Last Name</label>
+        <input type="text" name="" id="Lnameinp">
+        <br><br>
+
+        <label for="Deptinp">Department</label>
+        <select name="" id="Deptinp">
+            <option value="Development">Development</option>
+            <option value="Testing">Testing</option>
+            <option value="Administrator">Administrator</option>
+        </select>
+        <br><br>
+
+        <label for="swiminp">Can Swim</label>
+        <select name="" id="swiminp">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <br><br>
+
+        <label for="Cnicinp">CNIC No</label>
+        <input type="number" name="" id="Cnicinp">
+        <br><br>
+
+        <button id="AddBtn">Add Employee</button>
+        <button id="RetBtn">Retrieve Employee</button>
+        <button id="UpdBtn">Update Employee</button>
+        <button id="DltBtn">Delete Employee</button>
+
+        <h1>Employee List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Department</th>
+                    <th>CNIC</th>
+                    <th>Can Swim</th>
+                </tr>
+            </thead>
+            <tbody id="dataList">
+                <!-- Data akan dimasukkan di sini -->
+            </tbody>
+        </table>
+
+        <script type="module" src="app.js"></script>
+
+    </body>
+
+</html>
